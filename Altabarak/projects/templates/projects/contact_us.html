@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block custom_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/contacus.css' %}">
+{% endblock %}
+
+{% block content %}
+
+	<div id="mywidth">
+			<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="380" id="gmap_canvas" src="https://maps.google.com/maps?q=%D8%A7%D9%84%D8%AA%D8%A8%D8%A7%D8%B1%D9%83%20%D9%84%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9%20%D9%88%20%D8%A7%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net"></a></div><style>.mapouter{text-align:right;height:380px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:380px;width:100%;}</style></div>
+	</div>	
+		 <!-- Start Our Manegers -->
+      <section class="Our_manegers text-center">
+
+        <div class="orbacground">
+
+          <div class="register">
+            <form method="post" enctype="multipart/form-data" class="text-center"class="col-md">
+
+            <h1>مرحبا بكم فى شركة التبارك للهندسة و المقاولات</h1>
+            {% if messages %}
+                {% for message in messages %}
+                <p class="text-center" {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>
+                {% endfor %}
+                {% else %}
+                <p class="text-center">شركة التبارك ترحب بعملائها الكرام</p>
+            {% endif %}
+
+
+            	{% csrf_token %}
+		        <div class="fieldWrapper">
+		        {{ form.forms.fullname }}
+		        <label id="mylable" for="{{ form.forms.id_for_label }}">: الاسم</label>
+		        {{ form.fullname }}
+		        </div>
+
+		        <div class="fieldWrapper">
+		        {{ form.forms.e_mail }}
+		        <label id="mylable" for="{{ form.forms.id_for_label }}">: البريد الالكترونى</label>
+		        {{ form.e_mail }}
+		        </div>
+
+		       
+
+
+		        <div class="fieldWrapper mytext">
+			        {{ form.forms.text }}
+			        <label id="mylable" for="{{ form.forms.id_for_label }}">: نص الرساله</label>
+			       <textarea for={{ form.text }} </textarea> 
+			    </div>
+
+		        <div class="col-md">
+		            <button id="mybutton" type="submit" class="btn btn-danger">ارسال البيانات</button>
+		        </div>
+      		</form>
+          </div>
+
+        </div>
+
+      </section>
+    <!-- End Our Manegers -->	
+
+
+{% endblock %}

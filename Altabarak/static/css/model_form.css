@@ -1,0 +1,219 @@
+body{
+	padding-top: 55px;
+	background-color: #FFF;
+	color: #FFF
+}
+.body_color{
+	background-color: #FFF;
+	padding-top: 25px;
+}
+
+/**** Overriding Bootstrap ****/
+/* Navbar */
+.navbar{
+	min-height: 65px;
+	margin-bottom: 80px;
+
+}
+.bg-dark{
+	background-color: #08526d !important
+}
+.navbar-toggle{
+	margin-top: 18px
+}
+/* Active link */
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active{
+	/*color: #E41B17;*/
+}
+/* Navber link color */
+.navbar-dark .navbar-nav .nav-link{
+	color: #BBB;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 17px;
+	padding-left: 15px
+}
+.navbar-brand{
+	font-size: 19px;
+	line-height: 35px;
+}
+/* Dropdown menu */
+.dropdown-menu{
+	background-color: #08526d;
+	border-top: 3px solid #E41B17
+}
+.dropdown-menu a:hover{
+  background-color: #E41B17;
+  padding-left: 30px;
+  color: #FFF;
+}
+
+/* Dropdown list color */
+.dropdown-item{
+	color: #BBB;
+	padding: 6px 20px;
+	min-width: 280px;
+	-webkit-transition: padding 0.5s ease;
+	-moz-transition: padding 0.5s ease;
+	-o-transition: padding 0.5s ease;
+	transition: padding 0.5s ease;
+}
+
+/* Start footer */
+.footer{
+	background-color: #333;
+	color: #AAA;
+	padding-top: 60px;
+}
+.footer a{
+	color: #AAA
+}
+.footer a:hover{
+	color: #FFF
+}
+.footer .container h3{
+	color: #0895D1;
+	text-align: right;
+	margin-bottom: 40px
+}
+.footer .container .three-columns{
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+.footer .container .three-columns li{
+	width: 33.3333%;
+	float: right;
+	padding: 5px 0;
+	text-align: right;
+}
+.footer .container img{
+	width: 48px;
+}
+.footer .container .social-list{
+	overflow: hidden;
+	margin: 20px 0 10px
+}
+.footer .container .social-list li{
+	float: right;
+	margin-left: 10px;
+	opacity: .6;
+	filter: alpha(opacity=60);
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.footer .container .social-list li:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+.contact{
+	text-align: right;
+	line-height: 35px
+}
+.footer .copyright{
+	background-color: #111;
+	color: #AAA;
+	padding: 15px 0;
+	margin-top: 20px;
+	font-size: 20px;
+}
+.footer .copyright span{
+	color: #0895D1
+}
+/* End footer */
+
+.table .thead-dark th{
+	background-color:  #194f86 !important;
+}
+.table-bordered td, .table-bordered th{
+	border: 1px solid #0f77de;
+}
+h1{
+	padding-top: 50px;
+	padding-bottom: 10px;
+	color: #0895D1;
+}
+h2{
+	padding-right: 20px;
+	color: #0895D1;
+}
+h4{
+	padding-right: 30px;
+	padding-bottom: 20px;
+}
+
+#mylable{
+	color: red;
+	width: 70%;
+	text-align: right;
+	margin-top: 7px;
+	padding-top: 2px;
+	font-size: 20px;
+	color: #FFF;
+}
+
+input, select, optgroup, textarea{
+	width: 70%;
+	margin-bottom: 7px;
+	padding: 2px;
+	text-align: right;
+}
+#mybutton {
+	margin-right: 25%;
+	margin-top: 20px;
+	background-color: #E41B17;
+}
+#pa{
+	padding-left: 9%;
+}
+
+
+/* Start our manegers */
+.Our_manegers{
+	background: url("../img/background_manage.jpg") no-repeat center center fixed;
+	max-width: 100%;
+	max-height: 100%;
+}
+.orbacground{
+	background-color: rgba(2,2,2,.5);
+	min-height: 400px
+}
+.orbacground h1{
+	color: #FFF;
+	padding-top: 100px;
+	margin-bottom: 60px
+}
+
+/* End our manegers */
+
+/* Start our manegers */
+.Our_manegers2{
+	background: url("../img/new.jpg") no-repeat center center fixed;
+	max-width: 100%;
+	max-height: 100%;
+}
+.orbacground2{
+	background-color: rgba(2,2,2,.7);
+	min-height: 300px
+}
+.orbacground2 h1{
+	color: #FFF;
+	padding-top: 40px;
+}
+.orbacground2 p{
+	padding-bottom: 10px;
+}
+.orbacground2 {
+	color: #FFF;
+	font-size: 30px;
+}
+
+/* End our manegers */
+.register{
+	padding-top: 40px;
+	padding-bottom: 60px;
+}

@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block custom_css %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/jobs.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+ <section class="Our_manegers2 text-center">
+
+        <div class="orbacground2">
+        	<div class="container">
+        		<h1 class="text-center">شركة التبارك للهندسة والمقاولات
+				</h1>
+				<h3 class="text-center">ارسل سيرتك الذاتيه وانضم الينا</h3>
+				<h2 class="text-right">لماذا تنضم الينا</h2>
+				<h4 class="text-right">الشركة مسجلة بالاتحاد المصرى لمقاولى التشييد و البناء بالتصنيفات الاتية; فئة أولى اعمال مبانى – متكامل فئة أولى أعمال ترميمات و تشطيبات مبانى – فئة رابعة أعمال الاساسات – فئة رابعة أعمال كهروميكانيكة و الاليكترونية و شبكات الاتصال</h4>
+        	</div>
+        </div>
+
+      </section>
+
+<div class="container body_color">
+
+<p class="text-right">الوظائف المطلوبه  <i class="fas fa-user-md fa-3x"></i></p>
+	<br>
+	<div class="row text-right">
+			<table class="table table-bordered table-striped">
+			  <thead class="thead-dark">
+			    <tr>
+			      <th scope="col">تاريخ النشر</th>
+			      <th scope="col">سنوات الخبره</th>
+			      <th scope="col">المؤهل الدراسى</th>
+			      <th scope="col">المسمى الوظيفى</th>
+			      <th scope="col">#</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			  	{% for item in job %}
+			    <tr>		      
+			      <td>{{item.pub_date}}</td>
+			      <td>{{item.years_of_Experience}}</td>
+			      <td>{{item.Edu_Qualification}}</td>
+			      <td><a href="{% url 'projects:model_form_upload' %}">{{item.Job_title}}</a></td>
+			      <th scope="row">{{forloop.counter}}</th>
+			    </tr>
+			    {% endfor %}
+			  </tbody>
+			</table>
+		</div>
+		<br><br>
+	</div>
+</div>
+
+{% endblock %}

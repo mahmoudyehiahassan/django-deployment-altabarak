@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block custom_css %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/model_form.css' %}">
+{% endblock %}
+
+{% block content %}
+  <div class="container body_color ">
+  	<br><br>
+
+      <!-- Start Our Manegers -->
+      <section class="Our_manegers2 text-center">
+
+        <div class="orbacground2">
+             <h1>مرحبا بكم فى شركة التبارك للهندسة و المقاولات</h1>
+            {% if messages %}
+                {% for message in messages %}
+                <p class="text-center" {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>
+                {% endfor %}
+                {% else %}
+                <p class="text-center">برجاء قم بتسجيل البيانات و تحميل السيره الزاتيه</p>
+            {% endif %}
+
+        </div>
+
+      </section>
+    <!-- End Our Manegers -->
+
+
+      <br>
+
+     <!-- Start Our Manegers -->
+      <section class="Our_manegers text-center">
+
+        <div class="orbacground">
+
+          <div class="register">
+            <form method="post" enctype="multipart/form-data" class="text-center"class="col-md">
+        {% csrf_token %}
+        <!--{{ form.as_ul }}-->
+        
+
+        <div class="fieldWrapper">
+        {{ form.forms.description }}
+        <label id="mylable" for="{{ form.forms.id_for_label }}">: الاسم</label>
+        {{ form.description }}
+        </div>
+
+        <div class="fieldWrapper">
+        {{ form.forms.phonenumber }}
+        <label id="mylable" for="{{ form.forms.id_for_label }}">: رقم الهاتف</label>
+        {{ form.phonenumber }}
+        </div>
+
+        <div class="fieldWrapper">
+        {{ form.forms.empemail }}
+        <label id="mylable" for="{{ form.forms.id_for_label }}">: البريد الالكترونى</label>
+        {{ form.empemail }}
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-8">
+            <div class="fieldWrapper" id="pa">
+            {{ form.forms.document }}
+            <label id="mylable" for="{{ form.forms.id_for_label }}"> </label>
+            {{ form.document }}
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <button id="mybutton" type="submit" class="btn btn-danger">ارسال البيانات</button>
+          </div>
+        </div>
+      </form>
+          </div>
+
+        </div>
+
+      </section>
+    <!-- End Our Manegers -->
+  	
+   
+  
+  <br><br><br>
+  <!--<p><a href="{% url 'projects:jobs' %}">Return to home</a></p> -->
+  </div>
+{% endblock %}

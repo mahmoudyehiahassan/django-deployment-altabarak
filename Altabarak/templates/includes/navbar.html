@@ -1,0 +1,76 @@
+
+<!-- Start Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+		<div class="container">
+
+		  <a class="navbar-brand" href="#"><img src="../../static/img/OurLogo.PNG" width="55" height="40px"></a>
+
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <!-- collect the navbar links, and other content for toggling -->
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto">
+
+		      <li class="nav-item">
+		        <a class="nav-link" href="{% url 'projects:contact_us' %}">اتصل بنا<span class="sr-only">(current)</span></a>
+		      </li>
+
+		      <li class="nav-item">
+		        <a class="nav-link" href="{% url 'projects:jobs' %}">التوظيف<span class="sr-only">(current)</span></a>
+		      </li>
+
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">التبارك للخرسانه<span class="sr-only">(current)</span></a>
+		      </li>
+
+		      <li class="nav-item dropdown">
+
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          المشروعات
+		        </a>
+
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="{% url 'projects:hospitals' %}">مستشفيات</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="{% url 'projects:banks' %}">البنوك الحكومية</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="{% url 'projects:Public_buildings' %}">المبانى الادارية و الحكومية و المنشأت العامه</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="{% url 'projects:Colleges&Institutes' %}">الكليات و المعاهد</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="{% url 'projects:Factories' %}">المصانع</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="{% url 'projects:Schools' %}">المدارس و الابنية التعليمية</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="{% url 'projects:Residential_Projects' %}">المشروعات السكنية و الفيلات</a>
+		        </div>
+
+		      </li>
+
+		       <li class="nav-item">
+		        <a class="nav-link" href="#">العملاء<span class="sr-only">(current)</span></a>
+		      </li>
+
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">قسم الموارد<span class="sr-only">(current)</span></a>
+		      </li>
+
+		       <li class="nav-item">
+		        <a class="nav-link" href="{% url 'projects:aboucom' %}">من نحن<span class="sr-only">(current)</span></a>
+		      </li>
+
+		      <li class="nav-item active">
+		        <a class="nav-link active" href="{% url 'home' %}">الرئيسية <span class="sr-only">(current)</span></a>
+		      </li>
+
+		    </ul>
+
+		  </div>
+
+		</div><!-- End of container for the navbar -->
+
+	</nav>
+	<!-- End Navbar -->

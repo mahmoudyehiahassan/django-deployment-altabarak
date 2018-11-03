@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block custom_css %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/hosps.css' %}">
+{% endblock %}
+
+{% block content %}
+	<div class="container body_color">
+
+		<div class="container  projectDetails text-center">
+      <h1 class="lead">تمتلك شركة التبارك سابقة اعمال فى مجال بناء و تطوير المصانع</h1>
+      <i class="fas fa-industry fa-4x"></i>
+			<p><span>عدد المصانع : </span> 1 </p>
+	 	</div>
+
+	 	<hr>
+	 	<!-- Start Benha Porject -->
+	 	<div class="container">
+
+	 		<!-- Start Qna Porject -->
+	 		<div class="row mymargin">
+
+					<div class="col-md">
+						<div id="main_vedio">
+				  			<div class="responsive">
+
+				  			<iframe width="560" height="315" src="https://www.youtube.com/embed/yN9RHubrKd4?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+							</div>
+						</div>
+					</div>
+
+		 		<div class="col-md" id="mydata">
+					<h2>انشاء مصنع ومبنى ادارى بمدينة السلام</h2>
+					<p class="lead">طبيعة المشروع : <span>انشاء</span></p>
+					<p class="lead">الجهة المالكة : <span>وزارة الزراعة</span></p>
+					<p class="lead">الاستشارى : <span>1</span></p>
+					<p class="lead">الحاله التنفيذية : <span>تم التنفيذ</span></p>
+				</div>
+	 		</div>
+	 		<!-- End Qna Porject -->
+
+	 	</div>
+	</div>
+{% endblock %}

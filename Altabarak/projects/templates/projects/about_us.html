@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block custom_css %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+	
+	<div class="row col-md mybody">
+		<img src="../../static/img/my.jpg">
+	</div>
+
+{% endblock %}
